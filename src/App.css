@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #f5f6fa;
+  font-family: Montserrat, sans-serif;
+  min-width: 320px;
+}
+
+/* nav */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2vh 5.25rem;
+  background-color: white;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-icon {
+  color: #4386bf;
+}
+
+.h1-header {
+  font-size: 1.875rem;
+  font-weight: bold;
+}
+
+.links-container {
+  display: flex;
+  gap: 20px;
+  font-size: 0.813rem;
+  font-weight: 300;
+  letter-spacing: 1.9px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.813rem;
+}
+
+h1 {
+  color: #0290ff;
+}
+
+/* book info */
+.ul-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2.313rem 5.25rem;
+  gap: 0.1rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.938rem;
+  background-color: white;
+  padding: 2rem 5rem 2rem 2rem;
+  border: 0.5px solid rgb(214, 214, 214);
+  border-radius: 5px;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  width: 50%;
+}
+
+span {
+  color: rgb(214, 214, 214);
+}
+
+.book-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.book-title {
+  font-family: Roboto, serif;
+  font-size: 1.357rem;
+  font-weight: bold;
+  letter-spacing: -0.2px;
+}
+
+.book-category {
+  color: black;
+  font-size: 0.913rem;
+  font-weight: bold;
+  opacity: 0.5;
+}
+
+.book-author {
+  font-family: Roboto, serif;
+  font-size: 0.913rem;
+  font-weight: 300;
+  letter-spacing: 1.9px;
+}
+
+button.blue-font {
+  background-color: white;
+  font-family: Roboto, serif;
+  font-size: 0.913rem;
+  font-weight: 300;
+  letter-spacing: 1.9px;
+  border: 0;
+  color: #4386bf;
+}
+
+button.white-font {
+  background-color: #0290ff;
+  border: 0;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.blue-font {
+  color: #4386bf;
+}
+
+/* book percentage */
+.percentage-container {
+  display: flex;
+  gap: 10px;
+  margin-right: 2rem;
+}
+
+.percent-img {
+  width: 70px;
+  height: 70px;
+}
+
+.percentage {
+  font-size: 2rem;
+  font-weight: normal;
+  letter-spacing: 0;
+}
+
+.grey-font {
+  color: grey;
+}
+
+.completed {
+  font-size: 0.913rem;
+  font-weight: normal;
+  letter-spacing: 0;
+}
+
+/* book progresss */
+.progress {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.current-chapter {
+  font-family: RobotoSlab, serif;
+  font-size: 0.913rem;
+  font-weight: 300;
+  color: black;
+  opacity: 0.5;
+}
+
+.chapter {
+  font-family: RobotoSlab, serif;
+  font-size: 0.913rem;
+  font-weight: 300;
+  letter-spacing: -0.1px;
+}
+
+button.update {
+  font-family: RobotoSlab, serif;
+  font-size: 0.913rem;
+  font-weight: 300;
+  margin-top: 1.438rem;
+  padding: 0.8rem 1.375rem;
+  width: fit-content;
+}
+
+/* form */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5.25rem;
+  margin-bottom: 5rem;
+}
+
+.inputs {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+}
+
+input,
+select {
+  height: 2.813rem;
+  width: 30%;
+  border: rgb(214, 214, 214) 0.5px solid;
+  border-radius: 5px;
+  padding-left: 8px;
+  color: rgb(153, 152, 152);
+}
+
+select {
+  width: 10%;
+}
+
+#title {
+  width: 45%;
+}
+
+.h2-form {
+  color: grey;
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: -0.18px;
+  margin: 0;
+  padding-bottom: 1.188rem;
+  padding-top: 1.813rem;
+}
+
+button.add {
+  font-size: 0.913rem;
+  font-weight: bold;
+  letter-spacing: -0.15px;
+  width: 15%;
+  height: 2.813rem;
+}
+
+@media screen and (max-width: 768px) {
+  .item {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .inputs {
+    flex-wrap: wrap;
+  }
+
+  input,
+  select,
+  #title,
+  button.add {
+    width: 100%;
+  }
+}
