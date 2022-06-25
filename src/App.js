@@ -15,7 +15,7 @@ function App() {
 
       <nav className="header-container">
         <div className="navbar">
-          <h1 className="h1-header">Bookstore CMS</h1>
+          <h1 className="h1-header">Booksstore CMS</h1>
           <ul className="links-container">
             <li><Link to="/">BOOKS</Link></li>
             <li className="grey-font"><Link to="/categories">CATEGORIES</Link></li>
