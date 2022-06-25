@@ -20,7 +20,7 @@ const Book = (props) => {
         <h2 className="book-title">{title}</h2>
         <p className="book-author blue-font">{author}</p>
         <div className="book-buttons">
-          <button className="blue-font" type="button">Comments</button>
+          <button className="blue-font" type="button">Commments</button>
           <span> | </span>
           <button id={id} className="remove blue-font" type="button" onClick={removeHandler}>
             Remove
