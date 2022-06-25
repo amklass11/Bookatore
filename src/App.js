@@ -15,10 +15,10 @@ function App() {
 
       <nav className="header-container">
         <div className="navbar">
-          <h1 className="h1-header">Bookstore CMS</h1>
+          <h1 className="h1-header">Boookstore CMS</h1>
           <ul className="links-container">
             <li><Link to="/">BOOKS</Link></li>
-            <li className="grey-font"><Link to="/categories">CATEGORIES</Link></li>
+            <li className="grey-font"><Link to="/categories">CATEeGORIES</Link></li>
           </ul>
         </div>
         <i className="user-icon material-symbols-outlined">account_circle</i>
